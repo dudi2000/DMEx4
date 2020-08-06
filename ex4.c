@@ -13,6 +13,9 @@ int main(void) {
     scanf("%s", str);
     printf("Hello, %s!\n", str);
 
+#define HEADS 0
+#define TAILS 1 
+
  for(int i = 1; i <= 3; i++) {
         printf("Round %d: ", i);
 
