@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main(void) {
     srand((unsigned int)time(NULL));
  
- char str[6];
+    int headsCount = 0;
+    int tailsCount = 0; 
+    char str[6];
 
  printf("Who are you?\n");
     scanf("%s", str);
@@ -25,5 +28,12 @@ int main(void) {
                 tailsCount++;
                 break;
         }
+    }
+      printf("Heads: %d, Tails: %d\n", headsCount, tailsCount);
+
+    if(headsCount > tailsCount) {
+        printf("%s won!"\n, str);
+    } else {
+        printf("%s lost!\n", str);
     }
 return 0;
