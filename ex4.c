@@ -1,5 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+
+int main(void) {
+    srand((unsigned int)time(NULL));
+ 
+    int headsCount = 0;
+    int tailsCount = 0; 
+    char str[6];
+
+ printf("Who are you?\n");
+    scanf("%s", str);
+    printf("Hello, %s!\n", str);
 
 #define HEADS 0
 #define TAILS 1 
@@ -20,4 +32,5 @@
                 break;
         }
     }
+
 return 0;
